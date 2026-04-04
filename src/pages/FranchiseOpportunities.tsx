@@ -27,7 +27,7 @@ export default function FranchiseOpportunities() {
             transition={{ delay: 0.1 }}
             className="text-xl text-slate-300 max-w-2xl mx-auto"
           >
-            Partner with 528 Royal Crown and build a profitable business with our proven, high-demand brands.
+            Partner with 528 Royal Care and build a profitable business with our proven, high-demand brands.
           </motion.p>
         </div>
       </div>

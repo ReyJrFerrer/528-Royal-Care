@@ -35,7 +35,7 @@ export default function Home() {
               <span className="text-amber-500">Empowering Futures.</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-xl leading-relaxed">
-              528 Royal Crown is a premier holding company managing a diverse portfolio of successful food and beverage franchises. Join our growing family of entrepreneurs.
+              528 Royal Care is a premier holding company managing a diverse portfolio of successful food and beverage franchises. Join our growing family of entrepreneurs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 

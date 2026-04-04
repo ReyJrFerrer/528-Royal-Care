@@ -22,7 +22,7 @@ export default function Layout() {
               <div className="bg-amber-500 p-2 rounded-lg text-white group-hover:bg-amber-600 transition-colors">
                 <Crown size={24} />
               </div>
-              <span className="font-bold text-xl tracking-tight">528 Royal Crown</span>
+              <span className="font-bold text-xl tracking-tight">528 Royal Care</span>
             </Link>
 
             {/* Desktop Nav */}
@@ -106,7 +106,7 @@ export default function Layout() {
                 <div className="bg-amber-500 p-1.5 rounded-md text-white">
                   <Crown size={20} />
                 </div>
-                <span className="font-bold text-xl text-white tracking-tight">528 Royal Crown</span>
+                <span className="font-bold text-xl text-white tracking-tight">528 Royal Care</span>
               </Link>
               <p className="text-sm max-w-md">
                 Empowering entrepreneurs through exceptional franchise opportunities. We build brands that communities love.
@@ -132,7 +132,7 @@ export default function Layout() {
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-slate-800 text-sm text-center">
-            &copy; {new Date().getFullYear()} 528 Royal Crown. All rights reserved.
+            &copy; {new Date().getFullYear()} 528 Royal Care. All rights reserved.
           </div>
         </div>
       </footer>
