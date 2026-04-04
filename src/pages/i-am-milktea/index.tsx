@@ -49,7 +49,7 @@ export default function IAmMilktea() {
               <img
                 src="src/assets/iAmMilktea/iammilktea-logo.png"
                 alt="I AM MILKTEA Logo"
-                className="h-32 md:h-40 object-contain mx-auto"
+                className="h-80 md:h-85 object-contain mx-auto"
               />
             </motion.div>
 
@@ -79,15 +79,15 @@ export default function IAmMilktea() {
             >
               <a
                 href="#menu"
-                className="px-10 py-4 bg-[#d0d91b] hover:bg-[#b8c015] text-[#94a036] font-semibold transition-colors duration-300"
+                className="px-10 py-4 bg-[#d0d91b] hover:bg-[#b8c015] text-[white] font-semibold transition-colors duration-300"
               >
                 View Menu
               </a>
               <a
-                href="#contact"
+                href="mailto:info@iammilktea.com"
                 className="px-10 py-4 bg-white hover:bg-gray-100 text-[#94a036] font-semibold transition-colors duration-300"
               >
-                Order Now
+                Email Us
               </a>
             </motion.div>
           </div>
@@ -222,8 +222,8 @@ export default function IAmMilktea() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-slate-200">
             {[
               { size: 'Small', volume: '12 oz', price: 'From ₱45', description: 'Perfect for a quick treat' },
-              { size: 'Medium', volume: '16 oz', description: 'The classic choice' },
-              { size: 'Large', volume: '22 oz', description: 'Maximum satisfaction' },
+              { size: 'Medium', volume: '16 oz',price: 'From ₱60', description: 'The classic choice' },
+              { size: 'Large', volume: '22 oz',price: 'From ₱75', description: 'Maximum satisfaction' },
             ].map((item, idx) => (
               <motion.div
                 key={idx}
@@ -310,7 +310,7 @@ export default function IAmMilktea() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-slate-500 text-lg">Follow our Facebook Page @iammilktea for limited-time seasonal promos, new flavors, and giveaways!</p>
+            <p className="text-slate-500 text-lg">Follow our Facebook Page @IamMilkteaUrdaneta for limited-time seasonal promos, new flavors, and giveaways!</p>
           </div>
         </div>
       </section>
@@ -408,6 +408,10 @@ export default function IAmMilktea() {
             <p className="text-3xl md:text-4xl font-light mb-6">Open Monday - Saturday</p>
             <p className="text-xl text-white/90 max-w-2xl">
               Message our Facebook Page or give us a call for any inquiries or orders.
+              <br />
+              <span className="text-[#d0d91b] font-semibold">
+                Interested in franchising? <Link to="/franchise-opportunities" className="underline hover:text-white">Learn more about owning your own store!</Link>
+              </span>
             </p>
           </motion.div>
 
@@ -419,7 +423,7 @@ export default function IAmMilktea() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="#"
+              href="https://www.facebook.com/IAmMilkteaUrdaneta"
               className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white hover:bg-gray-100 text-[#94a036] font-semibold transition-colors duration-300"
             >
               <MessageCircle size={24} />
@@ -430,68 +434,12 @@ export default function IAmMilktea() {
               className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-transparent hover:bg-white/10 text-white font-semibold border-2 border-white transition-colors duration-300"
             >
               <Phone size={24} />
-              <span className="text-lg">Call Us</span>
+              <span className="text-lg">Email Us</span>
             </a>
           </motion.div>
         </div>
       </section>
 
-      {/* Hashtags */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="flex flex-wrap gap-4">
-              {[
-                '#IAmMilktea',
-                '#MilkteaLover',
-                '#UrdanetaCity',
-                '#DailyDoseOfJoy',
-              ].map((tag) => (
-                <span key={tag} className="text-slate-400 text-lg">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="py-16 bg-slate-900 text-white border-t border-slate-800">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-            <div>
-              <h3 className="text-2xl font-bold mb-3">I AM MILKTEA</h3>
-              <p className="text-slate-400">"I Am... Milktea. I Am your daily dose of Joy."</p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <div className="space-y-2">
-                <a href="#menu" className="block text-slate-400 hover:text-white transition-colors">
-                  Menu
-                </a>
-                <a href="#contact" className="block text-slate-400 hover:text-white transition-colors">
-                  Contact Us
-                </a>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Location</h4>
-              <div className="space-y-2 text-slate-400">
-                <p>Zone 2 Pedro T. Orata (Bactad)</p>
-                <p>Urdaneta City, Pangasinan</p>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-slate-800 pt-8 text-slate-500 text-sm">
-            <p>&copy; 2026 I AM MILKTEA. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

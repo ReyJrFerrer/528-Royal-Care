@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
-import { MapPin, Clock, Drumstick, Flame, Utensils, Heart, ChevronLeft, ChevronRight, MessageCircle, Star, Leaf, Users, Phone, Mail } from 'lucide-react';
+import { ChevronLeft, ChevronRight, MessageCircle,  Phone } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const heroImages = [
-  'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=1920&h=1080&fit=crop',
-  'https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=1920&h=1080&fit=crop',
-  'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=1920&h=1080&fit=crop',
+  'https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/643389614_923161453403702_8860218479893790935_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeG11Djve1xNWFre7xjJXb5f1POlA19fSxbU86UDX19LFnbeod2wMxNk3wemz5jqsDUonCBqa-LAqCAm7Zr6aBMh&_nc_ohc=nAZ_7Ibfpg4Q7kNvwExBbJ1&_nc_oc=AdoRRDMBi7SEoSHEAoeyd0_PItWFdO-IOZWEzhQYyqky6CwExSKT6MuIG6snV6VQjt4&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=Lf_RPVFv6FAfZ9ezBzjGeQ&_nc_ss=7a3a8&oh=00_Af3DBC3CKmq4ZkBthzBwzjNs1cl9xFHvaf8u0-ZeRW5IUg&oe=69D683C9',
+  'https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/644477203_1500411578756765_91466168498262308_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd6889&_nc_eui2=AeHSJAaDHxYF1xihr-JTBvkcWMo07hRxCkpYyjTuFHEKSu5ZNPFTBsYGoHJVOwVSUMOI_87bohoB6eRBjI2DsQyJ&_nc_ohc=ac4rO6yp1HcQ7kNvwFKtCMO&_nc_oc=AdpgaaeE5vN9VQIYJpRSOrEiWJ6LAq555ODd6oZVsGARTu9SHjnUzOIShEoXb1fU1C0&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=ZabKIZTHZKvXN4e0CKZEzg&_nc_ss=7a3a8&oh=00_Af252QfEWxeSFO7RPyI0dHPigsgY0JrauDmLgNm0MfUfaA&oe=69D66353',
+  'https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/548121307_122099461947021542_8213320326586436826_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeENvk0dBt6TwfuWMjIOrdJYOTdP83BnXXQ5N0_zcGdddNGt6FwVzIVf9i_P7beIim13B_iIy3gACSzNbv0DFhUF&_nc_ohc=QqXVQTVa3LoQ7kNvwF9xfFk&_nc_oc=AdpaHWu4EFPqdhkM3i_QEfbiUP-vs5ko_rVjyTgvwe2IUH6yN6QG3JDznX8DbRsCAHY&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=UX8rcuQekvOB9KlcJKQKqA&_nc_ss=7a3a8&oh=00_Af335-iYSMF3gtuE-4-aGICn5Aw8r2f16GhlemVLamP2vw&oe=69D6847E',
 ];
 
 export default function XandersLechon() {
@@ -28,7 +28,7 @@ export default function XandersLechon() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&h=1080&fit=crop"
+            src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/655611254_122127442437021542_8360373605262442929_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFs4prBmu4o54AZ9i3Qs_ixVlZdXLitxy5WVl1cuK3HLrKkd4AeDj97tdbCAZthEDGrfOpAgdEyXeUJx-MK9p8F&_nc_ohc=2osrOBt-0cUQ7kNvwEi-N03&_nc_oc=AdqoNdWEtHdVFKZQnEil1it0qF74kawHlJheb_pCcSv1B9jHy5d8NohG_QKcJ-vPzmo&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=gWyUEvlWBot7Lb1_YBn5nQ&_nc_ss=7a3a8&oh=00_Af1df3_DluLWON6Gt9orbR4uhHZaa2kLwQkFe6P1G3VJ1Q&oe=69D66432"
             alt="Delicious roasted food"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -38,13 +38,26 @@ export default function XandersLechon() {
 
         <div className="relative z-10 px-6 w-full">
           <div className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="mb-8"
+            >
+              <img
+                src="src/assets/xandersLechon/xandersLechon-logo.png"
+                alt="Xander's Lechon Logo"
+                className="h-80 md:h-85 object-contain mx-auto"
+              />
+            </motion.div>
+
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="text-5xl md:text-8xl font-bold text-white mb-8 leading-tight tracking-tight"
             >
-              Xander's Lechon
+              Xander's Lechon & Meals On-The-Go
             </motion.h1>
 
             <motion.p
@@ -161,7 +174,7 @@ export default function XandersLechon() {
                   <div className="text-sm text-slate-600">Fresh Daily</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-[#a04527] mb-2">2</div>
+                  <div className="text-4xl font-bold text-[#a04527] mb-2">6</div>
                   <div className="text-sm text-slate-600">Branches</div>
                 </div>
                 <div>
@@ -174,20 +187,7 @@ export default function XandersLechon() {
         </div>
       </section>
 
-      {/* Tagline Section */}
-      <section className="py-32 bg-[#a04527] text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-3xl md:text-5xl font-light leading-relaxed"
-          >
-            From our roaster to your table — hot, fresh, and bursting with flavor every single time
-          </motion.p>
-        </div>
-      </section>
+     
 
       {/* Our Menu - Hot & Fresh Roasts */}
       <section id="menu" className="py-32 bg-white">
@@ -384,6 +384,10 @@ export default function XandersLechon() {
             <p className="text-3xl md:text-4xl font-light mb-6">Open 24/7</p>
             <p className="text-xl text-white/90 max-w-2xl">
               Message our Facebook Page to place an order for delivery or for any inquiries.
+              <br />
+              <span className="text-[#46f805] font-semibold">
+                Interested in franchising? <a href="/franchise-opportunities" className="underline hover:text-white">Learn more about owning your own store!</a>
+              </span>
             </p>
           </motion.div>
 
@@ -412,63 +416,9 @@ export default function XandersLechon() {
         </div>
       </section>
 
-      {/* Hashtags */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="flex flex-wrap gap-4">
-              {[
-                '#XandersLechon',
-                '#MasarapAffordableQuality',
-                '#LechonManok',
-                '#PorkLiempo',
-                '#CalapanCity',
-              ].map((tag) => (
-                <span key={tag} className="text-slate-400 text-sm">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+    
 
-      {/* Footer */}
-      <footer className="py-16 bg-slate-900 text-white border-t border-slate-800">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-            <div>
-              <h3 className="text-2xl font-bold mb-3">Xander's Lechon</h3>
-              <p className="text-slate-400">Masarap. Affordable. Quality.</p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <div className="space-y-2">
-                <a href="#menu" className="block text-slate-400 hover:text-white transition-colors">
-                  Menu
-                </a>
-                <a href="#contact" className="block text-slate-400 hover:text-white transition-colors">
-                  Contact Us
-                </a>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Locations</h4>
-              <div className="space-y-2 text-slate-400">
-                <p>Nuciti Central Mall</p>
-                <p>Barangay Comunal</p>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-slate-800 pt-8 text-slate-500 text-sm">
-            <p>&copy; 2026 Xander's Lechon & Meals. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+    
     </div>
   );
 }
