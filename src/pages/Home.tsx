@@ -1,68 +1,109 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, TrendingUp, Users, Award, Coffee, CakeSlice, Drumstick } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users, Award, Coffee, CakeSlice, Drumstick, MessageCircle, Phone } from 'lucide-react';
 
 const brands = [
-  { id: 'i-am-milktea', name: 'I AM MILKTEA', tagline: 'Refreshing moments in every cup.', icon: Coffee, color: 'lime' },
-  { id: '517-bakery', name: '517 Bakery', tagline: 'Baked with love, served with a smile.', icon: CakeSlice, color: 'amber' },
-  { id: 'xanders-roasted', name: "Xander's Roasted", tagline: 'Savory perfection in every bite.', icon: Drumstick, color: 'rose' },
+  { id: 'i-am-milktea', name: 'I AM MILKTEA', tagline: '"I Am... Milktea. I Am your daily dose of Joy."', icon: Coffee, color: 'lime' },
+  { id: '517-bakery', name: '517 Bakery', tagline: '"Baked with love, served with joy." — 2 Corinthians 5:17', icon: CakeSlice, color: 'amber' },
+  { id: 'xanders-roasted', name: "Xander's Lechon", tagline: '"Masarap. Affordable. Quality."', icon: Drumstick, color: 'rose' },
 ];
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-slate-900 text-white overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-40">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <img 
-            src="https://picsum.photos/seed/corporate/1920/1080" 
+            src="src/assets/cover photo.png" 
             alt="Corporate Background" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent" />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
         
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+          
+          >
+            <img 
+              src="src/assets/logo.png" 
+              alt="528 Royal Crown Logo" 
+              className="h-70 md:h-75 object-contain mx-auto"
+            />
+          </motion.div>
+
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-2xl"
+            transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight">
-              Building Brands,<br/>
-              <span className="text-amber-500">Empowering Futures.</span>
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              Mastering Craft,<br/>
+              <span className="text-[#fdd304]">Multiplying Blessings.</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-xl leading-relaxed">
-              528 Royal Care is a premier holding company managing a diverse portfolio of successful food and beverage franchises. Join our growing family of entrepreneurs.
+            <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-xl mx-auto">
+              528 Royal Care is a premier holding company managing a diverse portfolio of successful food and beverage franchises.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                to="/franchise-opportunities" 
-                className="inline-flex items-center justify-center px-6 py-3.5 text-base font-medium rounded-xl text-slate-900 bg-amber-500 hover:bg-amber-400 transition-colors shadow-lg shadow-amber-500/30"
-              >
-                Explore Franchises
-                <ArrowRight className="ml-2" size={20} />
-              </Link>
-              <a 
-                href="#our-brands" 
-                className="inline-flex items-center justify-center px-6 py-3.5 text-base font-medium rounded-xl text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-colors border border-white/20"
-              >
-                View Our Brands
-              </a>
-            </div>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+            className="flex flex-wrap gap-4 justify-center"
+          >
+            <Link 
+              to="/franchise-opportunities" 
+              className="px-10 py-4 bg-[#fe023c] hover:bg-[#e0012f] text-white font-semibold transition-colors duration-300"
+            >
+              Explore Franchises
+            </Link>
+            <a 
+              href="#our-brands" 
+              className="px-10 py-4 bg-white hover:bg-gray-100 text-[#8e180d] font-semibold transition-colors duration-300"
+            >
+              View Our Brands
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our Foundation - Deuteronomy 28 */}
+      <section className="py-20 bg-[#8e180d] text-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Foundation</h2>
+          
+            <p className="text-lg leading-relaxed text-white/90">
+              "If you fully obey the Lord your God and carefully follow all his commands I give you today, the Lord your God will set you high above all the nations on earth. You will be blessed in the city and blessed in the country. The Lord will make you the head, not the tail."
+            </p>
+            <p className="text-3xl md:text-4xl font-bold text-[#fdd304] mt-6">Deuteronomy 28:13</p>
           </motion.div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Why Partner With 528 Royal Crown?</h2>
-            <p className="text-slate-600 text-lg">We provide end-to-end support to ensure your franchise thrives in a competitive market.</p>
-          </div>
+      <section className="py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-20"
+          >
+            <h2 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6">Why Partner With Us?</h2>
+            <p className="text-xl text-slate-600 max-w-2xl">We provide end-to-end support to ensure your franchise thrives in a competitive market.</p>
+          </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -75,13 +116,13 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1, duration: 0.5 }}
-                className="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-shadow"
+                transition={{ delay: idx * 0.1 }}
+                className="bg-[#f8f7f4] p-10 hover:shadow-xl transition-shadow"
               >
-                <div className="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-6">
-                  <feature.icon size={24} />
+                <div className="w-14 h-14 bg-[#8e180d]/10 text-[#8e180d] rounded-xl flex items-center justify-center mb-6">
+                  <feature.icon size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
+                <h3 className="text-2xl font-bold text-slate-900 mb-3">{feature.title}</h3>
                 <p className="text-slate-600 leading-relaxed">{feature.desc}</p>
               </motion.div>
             ))}
@@ -106,9 +147,9 @@ export default function Home() {
             {brands.map((brand, idx) => {
               const Icon = brand.icon;
               const heroImages = {
-                'i-am-miltea': 'https://picsum.photos/seed/milktea/800/600',
-                '517-bakery': 'https://picsum.photos/seed/bakery/800/600',
-                'xanders-roasted': 'https://picsum.photos/seed/roastedchicken/800/600',
+                'i-am-milktea': 'src/assets/iAmMilktea/iammilktea-logo.png',
+                '517-bakery': 'src/assets/517bakery/517Bakery-logo.png',
+                'xanders-roasted': 'src/assets/xandersLechon/xandersLechon-logo.png',
               };
               
               return (
@@ -150,6 +191,93 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Contact Section */}
+      <section className="py-32 bg-[#8e180d] text-white">
+        <div className="max-w-5xl mx-auto px-6 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-16"
+          >
+            <h2 className="text-5xl md:text-7xl font-bold mb-8">Partner With Us</h2>
+            <p className="text-2xl md:text-3xl font-light mb-6">Ready to Build Your Future?</p>
+            <p className="text-xl text-white/90 max-w-2xl mb-2">
+              Join our growing family of entrepreneurs and build a successful business with our proven brands.
+            </p>
+            <p className="text-[#fdd304] font-semibold">
+              Interested in franchising? <Link to="/franchise-opportunities" className="underline hover:text-white">Learn more about owning your own store!</Link>
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="flex flex-col sm:flex-row gap-4"
+          >
+            <Link
+              to="/franchise-opportunities"
+              className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#fe023c] hover:bg-[#e0012f] text-white font-semibold transition-colors duration-300"
+            >
+              <MessageCircle size={24} />
+              <span className="text-lg">Inquire Now</span>
+            </Link>
+            <a
+              href="tel:+639123456789"
+              className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white hover:bg-gray-100 text-[#8e180d] font-semibold transition-colors duration-300"
+            >
+              <Phone size={24} />
+              <span className="text-lg">Call Us</span>
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-16 bg-slate-900 text-white border-t border-slate-800">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+              <img
+                src="https://picsum.photos/seed/528logo/200/60"
+                alt="528 Royal Crown Logo"
+                className="h-12 object-contain mb-3"
+              />
+              <p className="text-slate-400">Building Brands, Empowering Futures.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <div className="space-y-2">
+                <Link to="/franchise-opportunities" className="block text-slate-400 hover:text-white transition-colors">
+                  Franchise Opportunities
+                </Link>
+                <Link to="/i-am-milktea" className="block text-slate-400 hover:text-white transition-colors">
+                  I AM MILKTEA
+                </Link>
+                <Link to="/517-bakery" className="block text-slate-400 hover:text-white transition-colors">
+                  517 Bakery
+                </Link>
+                <Link to="/xanders-roasted" className="block text-slate-400 hover:text-white transition-colors">
+                  Xander's Lechon
+                </Link>
+              </div>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Contact</h4>
+              <div className="space-y-2 text-slate-400">
+                <p>528 Royal Care</p>
+                <p>Philippines</p>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-slate-800 pt-8 text-slate-500 text-sm">
+            <p>&copy; 2026 528 Royal Care. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
