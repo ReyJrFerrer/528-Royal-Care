@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { Crown } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
+import logoMilktea from '@/assets/iAmMilktea/iammilktea-logo.png';
+
 const heroImages = [
   'https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/650399926_122103291777256103_7014430875862060442_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd6889&_nc_eui2=AeG0hGwtiAP5YONEfX8k-Rm4B5xO5D2oVqoHnE7kPahWquvlb1fZTmXt0e56C-Q_lPZzR3oLxIVuBUlm2KUeQqWE&_nc_ohc=UzsbmLBlLpEQ7kNvwHjRBCn&_nc_oc=Adrn3mL2s9kBS--JKgM0ZouzzdkYbiy1FOdApfiMKFFBv8esu3ca3lazQgIEI-Wd1pw&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=uxHGYsIqNLJ-CSIn1ttcjA&_nc_ss=7a3a8&oh=00_Af3CwNxOx89FFRAMsihJZQ-OUYYjO6cqWh9KpoBnAoUHRQ&oe=69D4112B',
   'https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/649079176_122103291981256103_6706803296947917984_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd6889&_nc_eui2=AeG9e6obEw0GhBwM4sxf5CUluuqic5Af2Z-66qJzkB_Zn4Kj-JNTbkFIgpODcHVe3R_S0Xd3BNxCodcmkxvxs-gd&_nc_ohc=-9rCwV7N-YwQ7kNvwHoC_CH&_nc_oc=AdpXPELnkUey5fSxHI-Kc_iXOeAwrRA78x2E_vBcAqslNsSIJzlVDWxz458yHR3d9j4&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=QPfwgEIyrTflkcPT78sWJA&_nc_ss=7a3a8&oh=00_Af1QeUnJFkdvKVgdDo6jjm5f0EnPxk0Q4CUHxRGwheTQkg&oe=69D4059C',
@@ -29,7 +31,7 @@ export default function IAmMilktea() {
     <div className="min-h-screen bg-white">
       <Helmet>
         <title>I AM MILKTEA</title>
-        <link rel="icon" type="image/png" href="/src/assets/iAmMilktea/iammilktea-logo.png?v=milktea" />
+        <link rel="icon" type="image/png" href="/iammilktea-logo.png?v=milktea" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -52,7 +54,7 @@ export default function IAmMilktea() {
               className="mb-8"
             >
               <img
-                src="src/assets/iAmMilktea/iammilktea-logo.png"
+                src={logoMilktea}
                 alt="I AM MILKTEA Logo"
                 className="h-80 md:h-85 object-contain mx-auto"
               />

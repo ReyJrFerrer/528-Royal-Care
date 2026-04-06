@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Clock, CakeSlice, ChevronLeft, ChevronRight, MessageCircle, Star, Users, Sparkles, Truck, Heart } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
+import logo517 from '@/assets/517bakery/517Bakery-logo.png';
+
 const heroImages = [
   'https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/616808165_2789056431432366_1870926798069140740_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGW7sK_7uHOVe_WZLGUqbWdKGzTYC7clDkobNNgLtyUOQntfvSZGyMq7eJAxska3XRLaeWg_suI67-LUJRygD2K&_nc_ohc=EHNwe-2FwMYQ7kNvwHe-sGT&_nc_oc=AdoNyYTP-u4p65JOLyD4LDmny3n4lOjXAnMq1Nvgh4cc3CWAV9jJxtoOvrPz3xEX7i4&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=MNj-c1BKcVtMAOHgY_veUg&_nc_ss=7a3a8&oh=00_Af0kDH67JP6U73_og-IdOuEvjYVLj3cuY5LDkfXHI4i7qg&oe=69D6911E',
   'https://scontent.fcrk1-2.fna.fbcdn.net/v/t39.30808-6/514530142_2607830062888338_6279359940407710573_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeG7od6H-AkfKIj8JDSh6q5UzVM_f3QuiUHNUz9_dC6JQbIGfwS3gQPT2Gg3frVXPWosFasVHil7Hd4OWKJMp1V2&_nc_ohc=byuQ36CZjsMQ7kNvwFGtvSf&_nc_oc=AdpGNBicf-CtESq7f8tbDuJt1P__FoFJYWdzoArdAk3M0CSIKILrkpqYLEqrO6Fsaeg&_nc_zt=23&_nc_ht=scontent.fcrk1-2.fna&_nc_gid=dovEFkIxWMoP1x2ZZK4pWw&_nc_ss=7a3a8&oh=00_Af3uKVxfPtJZEaR-2pFQdbdxqRaIBQBbZlwFCqqaEq83Bw&oe=69D68BD8',
@@ -27,7 +29,7 @@ export default function Bakery517() {
     <div className="min-h-screen bg-white">
       <Helmet>
         <title>New Creation 517 Bakery</title>
-        <link rel="icon" type="image/png" href="/src/assets/517bakery/517Bakery-logo.png?v=bakery" />
+        <link rel="icon" type="image/png" href="/517Bakery-logo.png?v=bakery" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -49,7 +51,7 @@ export default function Bakery517() {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="src/assets/517bakery/517Bakery-logo.png"
+                src={logo517}
                 alt="New Creation 517 Bakery Logo"
                 className="h-80 md:h-85 object-contain mx-auto"
               />

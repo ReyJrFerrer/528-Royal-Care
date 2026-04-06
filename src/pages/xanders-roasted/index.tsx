@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { ChevronLeft, ChevronRight, MessageCircle,  Phone } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
+import logoXanders from '@/assets/xandersLechon/xandersLechon-logo.png';
+
 const heroImages = [
   'https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/643389614_923161453403702_8860218479893790935_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeG11Djve1xNWFre7xjJXb5f1POlA19fSxbU86UDX19LFnbeod2wMxNk3wemz5jqsDUonCBqa-LAqCAm7Zr6aBMh&_nc_ohc=nAZ_7Ibfpg4Q7kNvwExBbJ1&_nc_oc=AdoRRDMBi7SEoSHEAoeyd0_PItWFdO-IOZWEzhQYyqky6CwExSKT6MuIG6snV6VQjt4&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=Lf_RPVFv6FAfZ9ezBzjGeQ&_nc_ss=7a3a8&oh=00_Af3DBC3CKmq4ZkBthzBwzjNs1cl9xFHvaf8u0-ZeRW5IUg&oe=69D683C9',
   'https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/644477203_1500411578756765_91466168498262308_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd6889&_nc_eui2=AeHSJAaDHxYF1xihr-JTBvkcWMo07hRxCkpYyjTuFHEKSu5ZNPFTBsYGoHJVOwVSUMOI_87bohoB6eRBjI2DsQyJ&_nc_ohc=ac4rO6yp1HcQ7kNvwFKtCMO&_nc_oc=AdpgaaeE5vN9VQIYJpRSOrEiWJ6LAq555ODd6oZVsGARTu9SHjnUzOIShEoXb1fU1C0&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=ZabKIZTHZKvXN4e0CKZEzg&_nc_ss=7a3a8&oh=00_Af252QfEWxeSFO7RPyI0dHPigsgY0JrauDmLgNm0MfUfaA&oe=69D66353',
@@ -27,7 +29,7 @@ export default function XandersLechon() {
     <div className="min-h-screen bg-white">
       <Helmet>
         <title>Xander's Lechon and Meals-On-The-Go</title>
-        <link rel="icon" type="image/png" href="/src/assets/xandersLechon/xandersLechon-logo.png?v=xanders" />
+        <link rel="icon" type="image/png" href="/xandersLechon-logo.png?v=xanders" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -50,7 +52,7 @@ export default function XandersLechon() {
               className="mb-8"
             >
               <img
-                src="src/assets/xandersLechon/xandersLechon-logo.png"
+                src={logoXanders}
                 alt="Xander's Lechon Logo"
                 className="h-80 md:h-85 object-contain mx-auto"
               />

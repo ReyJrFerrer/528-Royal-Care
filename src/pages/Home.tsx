@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, TrendingUp, Users, Award, Coffee, CakeSlice, Drumstick, MessageCircle, Phone, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
+import coverPhoto from '@/assets/mainPage/cover photo.png';
+import logo from '@/assets/logo.png';
+import oldBakeryPic from '@/assets/mainPage/old bakery pic.jpg';
+import givingBack1 from '@/assets/mainPage/giving back 1.jpg';
+import givingBack2 from '@/assets/mainPage/giving back 2.jpg';
+import givingBack3 from '@/assets/mainPage/giving back 3.jpg';
+import iAmMilkteaLogo from '@/assets/iAmMilktea/iammilktea-logo.png';
+import bakery517Logo from '@/assets/517bakery/517Bakery-logo.png';
+import xandersLechonLogo from '@/assets/xandersLechon/xandersLechon-logo.png';
+
 const brands = [
   { id: 'i-am-milktea', name: 'I AM MILKTEA', tagline: '"I Am... Milktea. I Am your daily dose of Joy."', icon: Coffee, color: 'lime' },
   { id: '517-bakery', name: '517 Bakery', tagline: '"Baked with love, served with joy." — 2 Corinthians 5:17', icon: CakeSlice, color: 'amber' },
@@ -10,9 +20,9 @@ const brands = [
 ];
 
 const givingBackImages = [
-  'src/assets/mainPage/giving back 1.jpg',
-  'src/assets/mainPage/giving back 2.jpg',
-  'src/assets/mainPage/giving back 3.jpg',
+  givingBack1,
+  givingBack2,
+  givingBack3,
 ];
 
 export default function Home() {
@@ -33,7 +43,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="src/assets/mainPage/cover photo.png" 
+            src={coverPhoto} 
             alt="Corporate Background" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -49,7 +59,7 @@ export default function Home() {
           
           >
             <img 
-              src="src/assets/logo.png" 
+              src={logo} 
               alt="528 Royal Crown Logo" 
               className="h-55 md:h-75 object-contain mx-auto"
             />
@@ -125,7 +135,7 @@ export default function Home() {
             >
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img 
-                  src="src/assets/mainPage/old bakery pic.jpg"
+                  src={oldBakeryPic}
                   alt="Our first bakery in the 1970s"
                   className="w-full h-auto sepia-[30%]"
                   referrerPolicy="no-referrer"
@@ -293,9 +303,9 @@ export default function Home() {
             {brands.map((brand, idx) => {
               const Icon = brand.icon;
               const heroImages = {
-                'i-am-milktea': 'src/assets/iAmMilktea/iammilktea-logo.png',
-                '517-bakery': 'src/assets/517bakery/517Bakery-logo.png',
-                'xanders-roasted': 'src/assets/xandersLechon/xandersLechon-logo.png',
+                'i-am-milktea': iAmMilkteaLogo,
+                '517-bakery': bakery517Logo,
+                'xanders-roasted': xandersLechonLogo,
               };
               
               return (
