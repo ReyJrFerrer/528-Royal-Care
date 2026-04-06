@@ -2,6 +2,7 @@ import { Link, Outlet, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import logo from '@/assets/logo.png';
 
 const franchises = [
   { id: 'i-am-milktea', name: 'I AM MILKTEA' },
@@ -20,7 +21,7 @@ export default function Layout() {
           <div className="flex justify-between items-center h-20">
             <Link to="/" className="flex items-center gap-3 group">
               <img 
-                src="src/assets/logo.png" 
+                src={logo} 
                 alt="528 Royal Care" 
                 className="h-10 w-auto"
               />
@@ -106,7 +107,7 @@ export default function Layout() {
             <div className="col-span-1 md:col-span-2">
               <Link to="/" className="flex items-center gap-2 mb-4">
                 <img 
-                  src="src/assets/logo.png" 
+                  src={logo}
                   alt="528 Royal Care" 
                   className="h-8 w-auto"
                 />
