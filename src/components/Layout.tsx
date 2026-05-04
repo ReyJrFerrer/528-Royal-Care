@@ -1,6 +1,6 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronRight } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import logo from '@/assets/logo.svg';
 
@@ -13,6 +13,10 @@ const franchises = [
 export default function Layout() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div className="min-h-screen flex flex-col font-sans bg-slate-50 text-slate-900">
@@ -53,6 +57,9 @@ export default function Layout() {
               </div>
               <Link to="/franchise-opportunities" className={`text-sm font-medium transition-colors hover:text-amber-600 ${location.pathname === '/franchise-opportunities' ? 'text-amber-600' : 'text-slate-600'}`}>
                 Franchise Opportunities
+              </Link>
+              <Link to="/contact" className={`text-sm font-medium transition-colors hover:text-amber-600 ${location.pathname === '/contact' ? 'text-amber-600' : 'text-slate-600'}`}>
+                Contact
               </Link>
             </nav>
 
