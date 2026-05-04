@@ -10,7 +10,7 @@ import givingBack1 from '@/assets/mainPage/giving back 1.jpg';
 import givingBack2 from '@/assets/mainPage/giving back 2.jpg';
 import givingBack3 from '@/assets/mainPage/giving back 3.jpg';
 import iAmMilkteaLogo from '@/assets/iAmMilktea/iammilktea-logo.png';
-import bakery517Logo from '@/assets/517bakery/517Bakery-logo.png';
+import bakery517Logo from '@/assets/517bakery/517Bakery-logo.svg';
 import xandersLechonLogo from '@/assets/xandersLechon/xandersLechon-logo.png';
 
 const brands = [

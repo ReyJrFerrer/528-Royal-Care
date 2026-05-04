@@ -4,7 +4,7 @@ import { MapPin, Phone, Clock, CakeSlice, ChevronLeft, ChevronRight, MessageCirc
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-import logo517 from '@/assets/517bakery/517Bakery-logo.png';
+import logo517 from '@/assets/517bakery/517Bakery-logo.svg';
 
 const heroImages = [
   'https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/616808165_2789056431432366_1870926798069140740_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGW7sK_7uHOVe_WZLGUqbWdKGzTYC7clDkobNNgLtyUOQntfvSZGyMq7eJAxska3XRLaeWg_suI67-LUJRygD2K&_nc_ohc=EHNwe-2FwMYQ7kNvwHe-sGT&_nc_oc=AdoNyYTP-u4p65JOLyD4LDmny3n4lOjXAnMq1Nvgh4cc3CWAV9jJxtoOvrPz3xEX7i4&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=MNj-c1BKcVtMAOHgY_veUg&_nc_ss=7a3a8&oh=00_Af0kDH67JP6U73_og-IdOuEvjYVLj3cuY5LDkfXHI4i7qg&oe=69D6911E',
@@ -30,7 +30,7 @@ export default function Bakery517() {
     <div className="min-h-screen bg-white">
       <Helmet>
         <title>New Creation 517 Bakery</title>
-        <link rel="icon" type="image/png" href="/517Bakery-logo.png?v=bakery" />
+        <link rel="icon" type="image/png" href="/517Bakery-logo.svg?v=bakery" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">

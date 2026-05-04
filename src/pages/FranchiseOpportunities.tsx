@@ -2,9 +2,9 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, ArrowRight, Store, TrendingUp, ShieldCheck, Coffee, CakeSlice, Drumstick } from 'lucide-react';
 
-import iAmMilkteaLogo from '@/assets/iAmMilktea/iammilktea-logo.png';
-import bakery517Logo from '@/assets/517bakery/517Bakery-logo.png';
-import xandersLechonLogo from '@/assets/xandersLechon/xandersLechon-logo.png';
+
+import bakery517Logo from '@/assets/517bakery/517Bakery-logo.svg';
+
 
 const franchises = [
   { id: '517-bakery', name: '517 Bakery', tagline: 'Baked with love, served with a smile.', icon: CakeSlice, color: 'amber', desc: 'Bring the aroma of 517 Bakery to your community. Our franchise program includes recipes, operational guidelines, and ongoing support.' },
