@@ -4,7 +4,7 @@ import { ArrowRight, TrendingUp, Users, Award, Coffee, CakeSlice, Drumstick, Mes
 import { useState, useEffect } from 'react';
 
 import coverPhoto from '@/assets/mainPage/cover photo.png';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/logo.svg';
 import oldBakeryPic from '@/assets/mainPage/old bakery pic.jpg';
 import givingBack1 from '@/assets/mainPage/giving back 1.jpg';
 import givingBack2 from '@/assets/mainPage/giving back 2.jpg';

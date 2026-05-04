@@ -2,7 +2,7 @@ import { Link, Outlet, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/logo.svg';
 
 const franchises = [
   { id: 'i-am-milktea', name: 'I AM MILKTEA' },
