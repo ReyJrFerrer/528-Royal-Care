@@ -29,7 +29,7 @@ export default function Layout() {
                 alt="528 Royal Care" 
                 className="h-10 w-auto"
               />
-              <span className="font-bold text-xl tracking-tight">528 Royal Care</span>
+              <span className="font-display font-bold text-xl tracking-tight">528 Royal Care</span>
             </Link>
 
             {/* Desktop Nav */}
@@ -118,7 +118,7 @@ export default function Layout() {
                   alt="528 Royal Care" 
                   className="h-8 w-auto"
                 />
-                <span className="font-bold text-lg text-white tracking-tight">528 Royal Care</span>
+                <span className="font-display font-bold text-lg text-white tracking-tight">528 Royal Care</span>
               </Link>
               <p className="text-sm max-w-md">
                 Empowering entrepreneurs through exceptional franchise opportunities. We build brands that communities love.

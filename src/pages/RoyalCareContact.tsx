@@ -58,8 +58,7 @@ const RoyalCareContact = () => {
             <div className="p-8 lg:p-12 bg-slate-900 text-white flex flex-col justify-center">
               <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
               <p className="text-slate-300 mb-10 text-lg leading-relaxed">
-                Whether you're a homeowner needing services, a skilled service
-                provider, or a local business partner — we're here to answer
+                <span className="font-display">528 Royal Care</span> is a premier holding company managing a diverse portfolio of successful food and beverage franchises. — we're here to answer
                 your questions and explore opportunities to connect our
                 community.
               </p>
@@ -71,7 +70,7 @@ const RoyalCareContact = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-white">E-mail</h3>
-                    <p className="mt-1 text-slate-300">hello@srvpinoy.com</p>
+                    <p className="mt-1 text-slate-300">hello@528royalcare.com</p>
                   </div>
                 </div>
 
@@ -81,7 +80,7 @@ const RoyalCareContact = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-white">Phone</h3>
-                    <p className="mt-1 text-slate-300">(+63) 993-951-5571</p>
+                    <p className="mt-1 text-slate-300">(+63) 99397535636</p>
                     <span className="text-sm text-red-400 mt-1 block">Tap to call</span>
                   </div>
                 </a>
@@ -97,8 +96,7 @@ const RoyalCareContact = () => {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-white">Location</h3>
                     <p className="mt-1 text-slate-300 leading-relaxed">
-                      InTTO Office, University of the Cordilleras Legarda Campus,
-                      Basement 1, Legarda Road, Baguio City, Philippines
+                      Zone 2 Pedro T. Orata, Bactad Proper, Urdaneta City
                     </p>
                     <span className="text-sm text-red-400 mt-2 block">Click to view map</span>
                   </div>
@@ -219,9 +217,9 @@ const RoyalCareContact = () => {
           >
             <div className="flex items-center justify-between p-6 border-b border-slate-100">
               <div>
-                <h3 id="modal-title" className="text-xl font-bold text-slate-900">SRV Location</h3>
+                <h3 id="modal-title" className="font-display text-xl font-bold text-slate-900">528 Royal Care Corporation</h3>
                 <p className="text-sm text-slate-500 mt-1">
-                  University of the Cordilleras (Legarda Campus) • InTTO Office
+                  Zone 2 Pedro T. Orata, Bactad Proper, Urdaneta City
                 </p>
               </div>
               <button
@@ -234,8 +232,8 @@ const RoyalCareContact = () => {
             </div>
             <div className="flex-grow bg-slate-100 w-full h-[60vh] relative">
               <iframe
-                title="SRV - University of the Cordilleras (Legarda Campus) map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.2841143403452!2d120.59157560000001!3d16.4103908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a1685e7b7073%3A0xe6bda988e8558d2!2sUniversity%20of%20Cordilleras%20Legarda!5e0!3m2!1sen!2sph!4v1759030399917!5m2!1sen!2sph"
+                title="528 Royal Care Corporation map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9019.838701807486!2d120.60478991528554!3d15.978129602873597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33913e74f81ac979%3A0xfefa3cdbd6072d4b!2sDr.%20Pedro%20T.%20Orata%20(Bactad%20Proper)%2C%20Urdaneta%20City%2C%20Pangasinan!5e1!3m2!1sen!2sph!4v1777902854175!5m2!1sen!2sph" 
                 className="absolute inset-0 w-full h-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

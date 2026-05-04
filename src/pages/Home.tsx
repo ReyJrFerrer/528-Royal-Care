@@ -75,7 +75,7 @@ export default function Home() {
               <span className="text-[#fdd304]">Multiplying Blessings.</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-xl mx-auto">
-              528 Royal Care is a premier holding company managing a diverse portfolio of successful food and beverage franchises.
+              <span className="font-display">528 Royal Care</span> is a premier holding company managing a diverse portfolio of successful food and beverage franchises.
             </p>
           </motion.div>
 
