@@ -132,7 +132,7 @@ export default function Layout() {
               <ul className="space-y-2 text-sm">
                 <li><Link to="/" className="hover:text-amber-500 transition-colors">About Us</Link></li>
                 <li><Link to="/franchise-opportunities" className="hover:text-amber-500 transition-colors">Franchise With Us</Link></li>
-                <li><a href="#" className="hover:text-amber-500 transition-colors">Contact</a></li>
+                <li><Link to="/contact" className="hover:text-amber-500 transition-colors">Contact</Link></li>
               </ul>
             </div>
           </div>

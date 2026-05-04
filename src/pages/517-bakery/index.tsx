@@ -458,13 +458,13 @@ export default function Bakery517() {
               <MessageCircle size={24} />
               <span className="text-lg">Message on Facebook</span>
             </a>
-            <a
-              href="tel:+639397535636"
+            <Link
+              to="/contact"
               className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white hover:bg-gray-100 text-[#8e180d] font-semibold transition-colors duration-300 rounded-xl"
             >
               <Phone size={24} />
               <span className="text-lg">Call Us</span>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>

@@ -6,6 +6,7 @@ import IAmMiltea from './pages/i-am-milktea';
 import Bakery517 from './pages/517-bakery';
 import XandersRoasted from './pages/xanders-roasted';
 import FranchiseOpportunities from './pages/FranchiseOpportunities';
+import RoyalCareContact from './pages/RoyalCareContact';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
             <Route path="517-bakery" element={<Bakery517 />} />
             <Route path="xanders-roasted" element={<XandersRoasted />} />
             <Route path="franchise-opportunities" element={<FranchiseOpportunities />} />
+            <Route path="contact" element={<RoyalCareContact />} />
           </Route>
         </Routes>
       </BrowserRouter>

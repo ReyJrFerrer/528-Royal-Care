@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ChevronLeft, ChevronRight, MessageCircle,  Phone } from 'lucide-react';
 import { useState, useEffect } from 'react';
@@ -414,13 +415,13 @@ export default function XandersLechon() {
               <MessageCircle size={24} />
               <span className="text-lg">Message on Facebook</span>
             </a>
-            <a
-              href="tel:+639123456789"
-              className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-transparent hover:bg-white/10 text-white font-semibold border-2 border-white transition-colors duration-300 rounded-xl"
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white hover:bg-gray-100 text-[#a04527] font-semibold transition-colors duration-300 rounded-xl"
             >
               <Phone size={24} />
               <span className="text-lg">Call Us</span>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>

@@ -375,19 +375,19 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <Link
-              to="/franchise-opportunities"
+              to="/contact"
               className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#fe023c] hover:bg-[#e0012f] text-white font-semibold transition-colors duration-300 rounded-xl"
             >
               <MessageCircle size={24} />
               <span className="text-lg">Inquire Now</span>
             </Link>
-            <a
-              href="tel:+639123456789"
+            <Link
+              to="/contact"
               className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white hover:bg-gray-100 text-[#8e180d] font-semibold transition-colors duration-300 rounded-xl"
             >
               <Phone size={24} />
               <span className="text-lg">Call Us</span>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
