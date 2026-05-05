@@ -5,10 +5,12 @@ import LazyImage from '@/components/LazyImage';
 
 
 import bakery517Logo from '@/assets/517bakery/517Bakery-logo.svg';
+import xandersLogo from '@/assets/xandersLechon/xandersLechon-logo.png';
 
 
 const franchises = [
   { id: '517-bakery', name: '517 Bakery', tagline: 'Baked with love, served with a smile.', icon: CakeSlice, color: 'amber', desc: 'Bring the aroma of 517 Bakery to your community. Our franchise program includes recipes, operational guidelines, and ongoing support.' },
+  { id: 'xanders-roasted', name: "Xander's Lechon & Meals On-The-Go", tagline: 'Masarap. Affordable. Quality.', icon: Drumstick, color: 'amber', desc: "Bring the sizzle of Xander's roasted specialties to your community. Our franchise program includes recipes, operational guidelines, and ongoing support." },
 ];
 
 export default function FranchiseOpportunities() {
@@ -67,6 +69,7 @@ export default function FranchiseOpportunities() {
           {franchises.map((franchise, idx) => {
             const heroImages = {
               '517-bakery': bakery517Logo,
+              'xanders-roasted': xandersLogo,
             };
             
             return (
@@ -116,9 +119,12 @@ export default function FranchiseOpportunities() {
                 </div>
 
                 <div className="flex gap-4">
-                  <button className="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-medium rounded-xl transition-colors">
-                    Request Info Kit
+                   <Link to="/contact" >
+                  <button className="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white font-medium rounded-xl transition-colors">
+                    Contact us
                   </button>
+                  </Link>
+                 
                   <Link 
                     to={`/${franchise.id}`}
                     className="px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-900 font-medium rounded-xl transition-colors flex items-center"
