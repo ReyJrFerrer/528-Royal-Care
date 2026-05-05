@@ -5,11 +5,28 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import logo517 from '@/assets/517bakery/517Bakery-logo.svg';
+import coverphoto from '@/assets/517bakery/517Bakery-coverphoto.jpg';
+import carousel1 from '@/assets/517bakery/517bakery-carousel1.jpg';
+import carousel2 from '@/assets/517bakery/517bakery-carousel2.jpg';
+import carousel3 from '@/assets/517bakery/517bakery-carousel3.jpg';
+import carousel4 from '@/assets/517bakery/517bakery-carousel4.jpg';
+import carousel5 from '@/assets/517bakery/517bakery-carousel5.jpg';
+import carousel6 from '@/assets/517bakery/517bakery-carousel6.jpg';
+import carousel7 from '@/assets/517bakery/517bakery-carousel7.jpg';
+import carousel8 from '@/assets/517bakery/517bakery-carousel8.jpg';
+import carousel9 from '@/assets/517bakery/517bakery-carousel9.jpg';
+
 
 const heroImages = [
-  'https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/616808165_2789056431432366_1870926798069140740_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGW7sK_7uHOVe_WZLGUqbWdKGzTYC7clDkobNNgLtyUOQntfvSZGyMq7eJAxska3XRLaeWg_suI67-LUJRygD2K&_nc_ohc=EHNwe-2FwMYQ7kNvwHe-sGT&_nc_oc=AdoNyYTP-u4p65JOLyD4LDmny3n4lOjXAnMq1Nvgh4cc3CWAV9jJxtoOvrPz3xEX7i4&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=MNj-c1BKcVtMAOHgY_veUg&_nc_ss=7a3a8&oh=00_Af0kDH67JP6U73_og-IdOuEvjYVLj3cuY5LDkfXHI4i7qg&oe=69D6911E',
-  'https://scontent.fcrk1-2.fna.fbcdn.net/v/t39.30808-6/514530142_2607830062888338_6279359940407710573_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeG7od6H-AkfKIj8JDSh6q5UzVM_f3QuiUHNUz9_dC6JQbIGfwS3gQPT2Gg3frVXPWosFasVHil7Hd4OWKJMp1V2&_nc_ohc=byuQ36CZjsMQ7kNvwFGtvSf&_nc_oc=AdpGNBicf-CtESq7f8tbDuJt1P__FoFJYWdzoArdAk3M0CSIKILrkpqYLEqrO6Fsaeg&_nc_zt=23&_nc_ht=scontent.fcrk1-2.fna&_nc_gid=dovEFkIxWMoP1x2ZZK4pWw&_nc_ss=7a3a8&oh=00_Af3uKVxfPtJZEaR-2pFQdbdxqRaIBQBbZlwFCqqaEq83Bw&oe=69D68BD8',
-  'https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/469454101_1113483393770809_8886681112257621535_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeH8v5VInpbIR6SshT4So4PUToRd9ZWN9ZROhF31lY31lLITVqMPuuSyxvGVlnUVK7oatM4ojKeUGHtxPCtPd3mc&_nc_ohc=M63C4UhO04AQ7kNvwHDjtuc&_nc_oc=AdpCGNQSwDoTFFxEJcbOe73B7AzmwE9-7CttrwAkaoyz8aXyLtldj5Wp1V0iAH5hetE&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=aKgfY8OLkg3cTfnXxpxiaw&_nc_ss=7a3a8&oh=00_Af2zTijuiIJzK0v7MnuFMPilKIOGCu4mKOedcQFoe4ZdRg&oe=69D6A24D',
+  carousel1,
+  carousel2,
+  carousel3,
+  carousel4,
+  carousel5,
+  carousel6,
+  carousel7,
+  carousel8,
+  carousel9,
 ];
 
 export default function Bakery517() {
@@ -36,7 +53,7 @@ export default function Bakery517() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/605603825_2774294856241857_150239403152761515_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeHz-7Iwk-bm0Tn7fW1HqdHCXlq647-GtgVeWrrjv4a2BZrTuJTD_GAwcgr4q6jXEkZJHXGylRzWJVwoHaHCXYDz&_nc_ohc=sRF9dbFO1-0Q7kNvwEUzhzD&_nc_oc=AdqlJlTYJnjWMLJCyHpQM1Wg54PjUl271ynssKFppdxISmkFcjKc8ZDsCCih4tB_w6I&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=yI-lC1ZgAPKG6P3OqI12YQ&_nc_ss=7a3a8&oh=00_Af3K2rIrXbjK3s5NALQeQnlkU8C60eioz0EFZewB7t6V6w&oe=69D69ECA"
+            src={coverphoto}
             alt="Fresh baked goods"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

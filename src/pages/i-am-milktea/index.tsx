@@ -1,17 +1,19 @@
 import { motion } from 'motion/react';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, Phone, Mail, Clock, Coffee, Tag, Heart, ChevronLeft, ChevronRight, MessageCircle, Users, Star } from 'lucide-react';
+import { Phone,  Tag, Heart, ChevronLeft, ChevronRight, MessageCircle, Users, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Crown } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 import logoMilktea from '@/assets/iAmMilktea/iammilktea-logo.png';
+import coverPhoto from '@/assets/iAmMilktea/iAmMilkTea-Coverphoto.jpg';
+import carousel1 from '@/assets/iAmMilktea/iammilktea-carousel1.jpg';
+import carousel2 from '@/assets/iAmMilktea/iammilktea-carousel2.jpg';
+import carousel3 from '@/assets/iAmMilktea/iammilktea-carousel3.jpg';
+import carousel4 from '@/assets/iAmMilktea/iammilktea-carousel4.jpg';
+import carousel5 from '@/assets/iAmMilktea/iammilktea-carousel5.jpg';
+import carousel6 from '@/assets/iAmMilktea/iammilktea-carousel6.jpg';
 
-const heroImages = [
-  'https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/650399926_122103291777256103_7014430875862060442_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd6889&_nc_eui2=AeG0hGwtiAP5YONEfX8k-Rm4B5xO5D2oVqoHnE7kPahWquvlb1fZTmXt0e56C-Q_lPZzR3oLxIVuBUlm2KUeQqWE&_nc_ohc=UzsbmLBlLpEQ7kNvwHjRBCn&_nc_oc=Adrn3mL2s9kBS--JKgM0ZouzzdkYbiy1FOdApfiMKFFBv8esu3ca3lazQgIEI-Wd1pw&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=uxHGYsIqNLJ-CSIn1ttcjA&_nc_ss=7a3a8&oh=00_Af3CwNxOx89FFRAMsihJZQ-OUYYjO6cqWh9KpoBnAoUHRQ&oe=69D4112B',
-  'https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/649079176_122103291981256103_6706803296947917984_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd6889&_nc_eui2=AeG9e6obEw0GhBwM4sxf5CUluuqic5Af2Z-66qJzkB_Zn4Kj-JNTbkFIgpODcHVe3R_S0Xd3BNxCodcmkxvxs-gd&_nc_ohc=-9rCwV7N-YwQ7kNvwHoC_CH&_nc_oc=AdpXPELnkUey5fSxHI-Kc_iXOeAwrRA78x2E_vBcAqslNsSIJzlVDWxz458yHR3d9j4&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=QPfwgEIyrTflkcPT78sWJA&_nc_ss=7a3a8&oh=00_Af1QeUnJFkdvKVgdDo6jjm5f0EnPxk0Q4CUHxRGwheTQkg&oe=69D4059C',
-  'https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/648295133_122103292383256103_1180980975423930961_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=dd6889&_nc_eui2=AeGnH1Cu8EC5ZP1WfyOTusWNqGOK9QuJF4CoY4r1C4kXgMyFfKFCElrdB_8kjivHk4Tzft69hxE2Ql6fINrvuyGx&_nc_ohc=VU6QSMGxbEQQ7kNvwFWq2zd&_nc_oc=Adrh0eyOBJRxqWIiHp1D2UsjcueDNVVqkIsmTehwSdnLaNeXwCiipEfQRWG6bjZq-JI&_nc_zt=23&_nc_ht=scontent.fcrk1-1.fna&_nc_gid=hFJgr-EfXQ4nh4Rb4Tez7w&_nc_ss=7a3a8&oh=00_Af2be-56TCMSQBQD7P1X-QFIoVSXo4YShBSznbmVtjzCig&oe=69D414DE',
-];
+const heroImages = [carousel1, carousel2, carousel3, carousel4, carousel5, carousel6];
 
 export default function IAmMilktea() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,7 +39,7 @@ export default function IAmMilktea() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/659156818_122107003089256103_4553002943123951736_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFxXR4X4IKrcDdBbnFICQxUYeIdLujisthh4h0u6OKy2H6tRHeFCiyUtw4cN3Z04IoOqjcM6d_zUBhN2bG69nuP&_nc_ohc=lfi3QM17iI8Q7kNvwFMF_X9&_nc_oc=AdqGYFaaJZcOkoZXWxpgSumzLCbkc8CKU46nVjhb-CtsOEhebSaQ6oLc-ncZqviWNTs&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=GGYZE2le5LN9afQT4OwnpQ&_nc_ss=7a3a8&oh=00_Af0LUleTqWFhNVgO0chjt1GYjTn16QZyb6AX7oiFgvg9zQ&oe=69D654BD"
+            src={coverPhoto}
             alt="I AM MILKTEA Background"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
