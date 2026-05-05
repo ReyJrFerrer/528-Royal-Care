@@ -43,7 +43,7 @@ export default function XandersLechon() {
         <link rel="icon" type="image/png" href="/xandersLechon-logo.png?v=xanders" />
       </Helmet>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden py-16 md:py-24">
         <div className="absolute inset-0">
           <LazyImage
             src={coverphoto}
@@ -71,7 +71,7 @@ export default function XandersLechon() {
                 width={320}
                 height={320}
                 priority
-                className="h-80 md:h-85 object-contain mx-auto"
+                className="h-48 md:h-85 object-contain mx-auto"
               />
             </motion.div>
 
@@ -79,7 +79,7 @@ export default function XandersLechon() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl md:text-8xl font-bold text-white mb-8 leading-tight tracking-tight"
+              className="text-4xl md:text-8xl font-bold text-white mb-4 md:mb-8 leading-tight tracking-tight"
             >
               Xander's Lechon & Meals On-The-Go
             </motion.h1>
@@ -88,7 +88,7 @@ export default function XandersLechon() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="text-xl md:text-3xl text-white/95 mb-12 font-light tracking-wide"
+              className="text-base md:text-3xl text-white/95 mb-8 md:mb-12 font-light tracking-wide"
             >
               Masarap. Affordable. Quality.
             </motion.p>
@@ -100,12 +100,12 @@ export default function XandersLechon() {
               className="flex flex-wrap gap-4 justify-center"
             >
               
-               <Link to="/franchise-opportunities" className="px-10 py-4 bg-[#a04527] hover:bg-[#8b3a1f] text-white font-semibold transition-colors duration-300 rounded-xl">
+               <Link to="/franchise-opportunities" className="px-6 py-3 md:px-10 md:py-4 bg-[#a04527] hover:bg-[#8b3a1f] text-white font-semibold transition-colors duration-300 rounded-xl text-sm md:text-base">
                Book for Franchising
                </Link>
               <a
                 href="#contact"
-                className="px-10 py-4 bg-white hover:bg-gray-100 text-[#a04527] font-semibold transition-colors duration-300 rounded-xl"
+                className="px-6 py-3 md:px-10 md:py-4 bg-white hover:bg-gray-100 text-[#a04527] font-semibold transition-colors duration-300 rounded-xl text-sm md:text-base"
               >
                 Contact Us
               </a>
@@ -115,9 +115,9 @@ export default function XandersLechon() {
       </section>
 
       {/* About Section with Carousel */}
-      <section className="py-32 bg-[#f8f7f4]">
+      <section className="py-16 md:py-32 bg-[#f8f7f4]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
             {/* Carousel */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -180,10 +180,10 @@ export default function XandersLechon() {
               transition={{ duration: 0.8 }}
               className="order-1 lg:order-2 space-y-8"
             >
-              <h2 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight">
+              <h2 className="text-3xl md:text-6xl font-bold text-slate-900 leading-tight">
                 Masarap. Affordable. Quality.
               </h2>
-              <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+              <div className="space-y-6 text-base md:text-lg text-slate-600 leading-relaxed">
                 <p>
                   Craving the perfect roast? Whether you need a feast for the whole family or a quick,
                   budget-friendly meal on the go, Xander's serves up freshly roasted Lechon Manok, juicy
@@ -196,18 +196,18 @@ export default function XandersLechon() {
               </div>
 
               {/* Quick Stats */}
-              <div className="grid grid-cols-3 gap-6 pt-8 border-t border-slate-200">
+              <div className="grid grid-cols-3 gap-4 md:gap-6 pt-6 md:pt-8 border-t border-slate-200">
                 <div>
-                  <div className="text-4xl font-bold text-[#a04527] mb-2">100%</div>
-                  <div className="text-sm text-slate-600">Fresh Daily</div>
+                  <div className="text-2xl md:text-4xl font-bold text-[#a04527] mb-2">100%</div>
+                  <div className="text-xs md:text-sm text-slate-600">Fresh Daily</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-[#a04527] mb-2">6</div>
-                  <div className="text-sm text-slate-600">Branches</div>
+                  <div className="text-2xl md:text-4xl font-bold text-[#a04527] mb-2">6</div>
+                  <div className="text-xs md:text-sm text-slate-600">Branches</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-[#a04527] mb-2">24/7</div>
-                  <div className="text-sm text-slate-600">Open</div>
+                  <div className="text-2xl md:text-4xl font-bold text-[#a04527] mb-2">24/7</div>
+                  <div className="text-xs md:text-sm text-slate-600">Open</div>
                 </div>
               </div>
             </motion.div>
@@ -218,16 +218,16 @@ export default function XandersLechon() {
      
 
       {/* Our Menu - Hot & Fresh Roasts */}
-      <section id="menu" className="py-32 bg-white">
+      <section id="menu" className="py-16 md:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-10 md:mb-20"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6">Our Menu</h2>
-            <p className="text-xl text-slate-600 max-w-2xl">
+            <h2 className="text-3xl md:text-7xl font-bold text-slate-900 mb-4 md:mb-6">Our Menu</h2>
+            <p className="text-base md:text-xl text-slate-600 max-w-2xl">
               Hot & Fresh Roasts — Perfect for family dinners, gatherings, or when you just want a hearty
               meal.
             </p>
@@ -246,10 +246,10 @@ export default function XandersLechon() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05 }}
-                className="bg-white/80 p-10 hover:shadow-xl transition-shadow rounded-2xl"
+                className="bg-white/80 p-6 md:p-10 hover:shadow-xl transition-shadow rounded-2xl"
               >
-                <h4 className="text-2xl font-bold text-slate-900 mb-3">{item.name}</h4>
-                <p className="text-lg text-[#a04527]">{item.description}</p>
+                <h4 className="text-xl md:text-2xl font-bold text-slate-900 mb-3">{item.name}</h4>
+                <p className="text-base md:text-lg text-[#a04527]">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -257,16 +257,16 @@ export default function XandersLechon() {
       </section>
 
       {/* On-The-Go Rice Meals */}
-      <section className="py-32 bg-[#f8f7f4]">
+      <section className="py-16 md:py-32 bg-[#f8f7f4]">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-10 md:mb-20"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6">Rice Meals</h2>
-            <p className="text-xl text-slate-600 max-w-2xl">
+            <h2 className="text-3xl md:text-7xl font-bold text-slate-900 mb-4 md:mb-6">Rice Meals</h2>
+            <p className="text-base md:text-xl text-slate-600 max-w-2xl">
               Quick, affordable, and packed with flavor — perfect for lunch or dinner on the go.
             </p>
           </motion.div>
@@ -282,10 +282,10 @@ export default function XandersLechon() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-white/80 p-12 hover:shadow-xl transition-shadow rounded-2xl"
+                className="bg-white/80 p-6 md:p-12 hover:shadow-xl transition-shadow rounded-2xl"
               >
-                <h4 className="text-3xl font-bold text-slate-900 mb-4">{meal.name}</h4>
-                <p className="text-xl text-[#a04527]">{meal.description}</p>
+                <h4 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3 md:mb-4">{meal.name}</h4>
+                <p className="text-base md:text-xl text-[#a04527]">{meal.description}</p>
               </motion.div>
             ))}
           </div>
@@ -293,16 +293,16 @@ export default function XandersLechon() {
       </section>
 
       {/* Sides & Refreshments */}
-      <section className="py-32 bg-white">
+      <section className="py-16 md:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-10 md:mb-20"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6">Sides & Drinks</h2>
-            <p className="text-xl text-slate-600 max-w-2xl">
+            <h2 className="text-3xl md:text-7xl font-bold text-slate-900 mb-4 md:mb-6">Sides & Drinks</h2>
+            <p className="text-base md:text-xl text-slate-600 max-w-2xl">
               Complete your meal with our homemade specials and refreshing beverages.
             </p>
           </motion.div>
@@ -319,10 +319,10 @@ export default function XandersLechon() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-white/80 p-8 hover:shadow-xl transition-shadow rounded-2xl"
+                className="bg-white/80 p-5 md:p-8 hover:shadow-xl transition-shadow rounded-2xl"
               >
-                <h4 className="text-xl font-bold text-slate-900 mb-2">{item.name}</h4>
-                <p className="text-slate-600">{item.description}</p>
+                <h4 className="text-lg md:text-xl font-bold text-slate-900 mb-2">{item.name}</h4>
+                <p className="text-sm md:text-base text-slate-600">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -330,22 +330,22 @@ export default function XandersLechon() {
       </section>
 
       {/* Customer Testimonials */}
-      <section className="py-32 bg-[#f8f7f4]">
+      <section className="py-16 md:py-32 bg-[#f8f7f4]">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-12"
+            className="space-y-8 md:space-y-12"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-slate-900">Customer Reviews</h2>
+            <h2 className="text-3xl md:text-7xl font-bold text-slate-900">Customer Reviews</h2>
 
-            <div className="border-l-4 border-[#a04527] pl-8 py-4">
-              <p className="text-2xl md:text-3xl text-slate-700 mb-8 leading-relaxed italic">
+            <div className="border-l-4 border-[#a04527] pl-5 md:pl-8 py-4">
+              <p className="text-xl md:text-3xl text-slate-700 mb-6 md:mb-8 leading-relaxed italic">
                 "Twice na akong nakabili ng kanilang letsong manok. Masarap naman!"
               </p>
               <div>
-                <p className="text-lg font-bold text-slate-900">Mercedita S.</p>
+                <p className="text-base md:text-lg font-bold text-slate-900">Mercedita S.</p>
                 <p className="text-slate-600">Regular Customer</p>
               </div>
             </div>
@@ -354,16 +354,16 @@ export default function XandersLechon() {
       </section>
 
       {/* Location Section */}
-      <section className="py-32 bg-white">
+      <section className="py-16 md:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-10 md:mb-20"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6">Visit Us</h2>
-            <p className="text-xl text-slate-600 max-w-3xl">
+            <h2 className="text-3xl md:text-7xl font-bold text-slate-900 mb-4 md:mb-6">Visit Us</h2>
+            <p className="text-base md:text-xl text-slate-600 max-w-3xl">
               Drop by either of our two branches in Calapan City, or send us a message on Facebook for
               delivery.
             </p>
@@ -389,9 +389,9 @@ export default function XandersLechon() {
                 transition={{ delay: idx * 0.1 }}
                 className="space-y-4"
               >
-                <h3 className="text-3xl font-bold text-slate-900">{branch.name}</h3>
-                <p className="text-lg text-slate-600 leading-relaxed">{branch.location}</p>
-                {branch.note && <p className="text-[#a04527] font-medium">{branch.note}</p>}
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-900">{branch.name}</h3>
+                <p className="text-base md:text-lg text-slate-600 leading-relaxed">{branch.location}</p>
+                {branch.note && <p className="text-sm md:text-base text-[#a04527] font-medium">{branch.note}</p>}
               </motion.div>
             ))}
           </div>
@@ -399,17 +399,17 @@ export default function XandersLechon() {
       </section>
 
       {/* Store Hours & Contact */}
-      <section id="contact" className="py-32 bg-[#a04527] text-white">
+      <section id="contact" className="py-16 md:py-32 bg-[#a04527] text-white">
         <div className="max-w-5xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16"
+            className="mb-10 md:mb-16"
           >
-            <h2 className="text-5xl md:text-7xl font-bold mb-8">Contact Us</h2>
-            <p className="text-3xl md:text-4xl font-light mb-6">Open 24/7</p>
-            <p className="text-xl text-white/90 max-w-2xl">
+            <h2 className="text-3xl md:text-7xl font-bold mb-6 md:mb-8">Contact Us</h2>
+            <p className="text-xl md:text-4xl font-light mb-4 md:mb-6">Open 24/7</p>
+            <p className="text-base md:text-xl text-white/90 max-w-2xl">
               Message our Facebook Page to place an order for delivery or for any inquiries.
               <br />
               <span className="text-[#46f805] font-semibold">
@@ -427,17 +427,17 @@ export default function XandersLechon() {
           >
             <a
               href="#"
-              className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white hover:bg-gray-100 text-[#a04527] font-semibold transition-colors duration-300 rounded-xl"
+              className="inline-flex items-center justify-center gap-3 px-6 py-3 md:px-10 md:py-5 bg-white hover:bg-gray-100 text-[#a04527] font-semibold transition-colors duration-300 rounded-xl"
             >
-              <MessageCircle size={24} />
-              <span className="text-lg">Message on Facebook</span>
+              <MessageCircle size={20} />
+              <span className="text-base md:text-lg">Message on Facebook</span>
             </a>
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white hover:bg-gray-100 text-[#a04527] font-semibold transition-colors duration-300 rounded-xl"
+              className="inline-flex items-center justify-center gap-3 px-6 py-3 md:px-10 md:py-5 bg-white hover:bg-gray-100 text-[#a04527] font-semibold transition-colors duration-300 rounded-xl"
             >
-              <Phone size={24} />
-              <span className="text-lg">Call Us</span>
+              <Phone size={20} />
+              <span className="text-base md:text-lg">Call Us</span>
             </Link>
           </motion.div>
         </div>

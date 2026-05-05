@@ -51,7 +51,7 @@ export default function Bakery517() {
         <link rel="icon" type="image/png" href="/517Bakery-logo.svg?v=bakery" />
       </Helmet>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden py-16 md:py-24">
         <div className="absolute inset-0">
           <LazyImage
             src={coverphoto}
@@ -78,7 +78,7 @@ export default function Bakery517() {
                 width={320}
                 height={320}
                 priority
-                className="h-80 md:h-85 object-contain mx-auto"
+                className="h-48 md:h-85 object-contain mx-auto"
               />
             </motion.div>
 
@@ -86,7 +86,7 @@ export default function Bakery517() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl md:text-8xl font-bold text-white mb-8 leading-tight tracking-tight"
+              className="text-4xl md:text-8xl font-bold text-white mb-4 md:mb-8 leading-tight tracking-tight"
             >
               New Creation 517 Bakery
             </motion.h1>
@@ -95,7 +95,7 @@ export default function Bakery517() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="text-lg md:text-2xl text-white/95 mb-8 font-light italic"
+              className="text-base md:text-2xl text-white/95 mb-4 md:mb-8 font-light italic"
             >
               "Therefore, if anyone is in Christ, he is a new creation; the old has gone, the new has come!" — 2 Corinthians 5:17
             </motion.p>
@@ -104,7 +104,7 @@ export default function Bakery517() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-xl md:text-2xl text-[#fdd304] mb-12 font-medium"
+              className="text-base md:text-2xl text-[#fdd304] mb-8 md:mb-12 font-medium"
             >
               Baked with love, served with joy.
             </motion.p>
@@ -117,13 +117,13 @@ export default function Bakery517() {
             >
                <a
                  href="#cakes"
-                 className="px-10 py-4 bg-[#a3342c] hover:bg-[#8a2b24] text-white font-semibold transition-colors duration-300 rounded-xl"
+                  className="px-6 py-3 md:px-10 md:py-4 bg-[#a3342c] hover:bg-[#8a2b24] text-white font-semibold transition-colors duration-300 rounded-xl text-sm md:text-base"
                >
                  View Menu
                </a>
                <a
                  href="#contact"
-                 className="px-10 py-4 bg-white hover:bg-gray-100 text-[#0a714e] font-semibold transition-colors duration-300 rounded-xl"
+                  className="px-6 py-3 md:px-10 md:py-4 bg-white hover:bg-gray-100 text-[#0a714e] font-semibold transition-colors duration-300 rounded-xl text-sm md:text-base"
                >
                  Order Now
                </a>
@@ -133,9 +133,9 @@ export default function Bakery517() {
       </section>
 
       {/* About Section with Carousel */}
-      <section className="py-32 bg-[#f8f7f4]">
+      <section className="py-16 md:py-32 bg-[#f8f7f4]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
             {/* Carousel */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -196,10 +196,10 @@ export default function Bakery517() {
               transition={{ duration: 0.8 }}
               className="order-1 lg:order-2 space-y-8"
             >
-              <h2 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight">
+              <h2 className="text-3xl md:text-6xl font-bold text-slate-900 leading-tight">
                 Our Story
               </h2>
-              <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+              <div className="space-y-6 text-base md:text-lg text-slate-600 leading-relaxed">
                 <p>
                   Welcome to New Creation 517 Bakery! From our humble beginnings to now having 26 branches
                   all over Abra, Pangasinan, and Mindoro province, we are dedicated to bringing joy to your
@@ -212,18 +212,18 @@ export default function Bakery517() {
               </div>
 
               {/* Quick Stats */}
-               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-[#0a714e]">
+               <div className="grid grid-cols-3 gap-4 md:gap-6 pt-6 md:pt-8 border-t border-[#0a714e]">
                  <div>
-                   <div className="text-4xl font-bold text-[#0a714e] mb-2">26</div>
-                   <div className="text-sm text-slate-600">Branches</div>
+                   <div className="text-2xl md:text-4xl font-bold text-[#0a714e] mb-2">26</div>
+                   <div className="text-xs md:text-sm text-slate-600">Branches</div>
                  </div>
                  <div>
-                   <div className="text-4xl font-bold text-[#0a714e] mb-2">Free</div>
-                   <div className="text-sm text-slate-600">Delivery</div>
+                   <div className="text-2xl md:text-4xl font-bold text-[#0a714e] mb-2">Free</div>
+                   <div className="text-xs md:text-sm text-slate-600">Delivery</div>
                  </div>
                  <div>
-                   <div className="text-4xl font-bold text-[#0a714e] mb-2">24/7</div>
-                   <div className="text-sm text-slate-600">Open</div>
+                   <div className="text-2xl md:text-4xl font-bold text-[#0a714e] mb-2">24/7</div>
+                   <div className="text-xs md:text-sm text-slate-600">Open</div>
                  </div>
                </div>
              </motion.div>
@@ -232,14 +232,14 @@ export default function Bakery517() {
       </section>
 
        {/* Tagline Section */}
-       <section className="py-32 bg-[#0a714e] text-white">
+       <section className="py-16 md:py-32 bg-[#0a714e] text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-3xl md:text-5xl font-light leading-relaxed"
+            className="text-2xl md:text-5xl font-light leading-relaxed"
           >
             Baked with love, served with joy — celebrating every milestone
           </motion.p>
@@ -247,16 +247,16 @@ export default function Bakery517() {
       </section>
 
       {/* Custom Cakes */}
-      <section id="cakes" className="py-32 bg-white">
+      <section id="cakes" className="py-16 md:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-10 md:mb-20"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6">Custom Cakes</h2>
-            <p className="text-xl text-slate-600 max-w-2xl">
+            <h2 className="text-3xl md:text-7xl font-bold text-slate-900 mb-4 md:mb-6">Custom Cakes</h2>
+            <p className="text-base md:text-xl text-slate-600 max-w-2xl">
               Celebrate your milestones with a cake that looks just as good as it tastes!
             </p>
           </motion.div>
@@ -275,17 +275,17 @@ export default function Bakery517() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05 }}
-                className="bg-white/80 p-8 rounded-2xl hover:shadow-xl transition-shadow"
+                className="bg-white/80 p-5 md:p-8 rounded-2xl hover:shadow-xl transition-shadow"
               >
-                   <CakeSlice className="text-[#a3342c] mb-4" size={32} />
-                <h4 className="text-2xl font-bold text-slate-900 mb-2">{item.name}</h4>
-                <p className="text-slate-600">{item.description}</p>
+                   <CakeSlice className="text-[#a3342c] mb-3 md:mb-4" size={28} />
+                <h4 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">{item.name}</h4>
+                <p className="text-sm md:text-base text-slate-600">{item.description}</p>
               </motion.div>
             ))}
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-lg text-slate-600 italic">
+            <p className="text-base md:text-lg text-slate-600 italic">
               To reserve your custom cake, simply message us on our Facebook page or text us with your design ideas!
             </p>
           </div>
@@ -293,16 +293,16 @@ export default function Bakery517() {
       </section>
 
       {/* Everyday Bakes */}
-      <section className="py-32 bg-[#f8f7f4]">
+      <section className="py-16 md:py-32 bg-[#f8f7f4]">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-10 md:mb-20"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6">Everyday Bakes</h2>
-            <p className="text-xl text-slate-600 max-w-2xl">
+            <h2 className="text-3xl md:text-7xl font-bold text-slate-900 mb-4 md:mb-6">Everyday Bakes</h2>
+            <p className="text-base md:text-xl text-slate-600 max-w-2xl">
               Looking for your daily snacks or sweet cravings? We have a delightful selection ready for you!
             </p>
           </motion.div>
@@ -321,10 +321,10 @@ export default function Bakery517() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05 }}
-                className="bg-white/80 p-8 rounded-2xl hover:shadow-xl transition-shadow"
+                className="bg-white/80 p-5 md:p-8 rounded-2xl hover:shadow-xl transition-shadow"
               >
-                <h4 className="text-2xl font-bold text-slate-900 mb-2">{item.name}</h4>
-                <p className="text-slate-600">{item.description}</p>
+                <h4 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">{item.name}</h4>
+                <p className="text-sm md:text-base text-slate-600">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -332,16 +332,16 @@ export default function Bakery517() {
       </section>
 
        {/* Why Choose Us */}
-       <section className="py-32 bg-[#0a714e] text-white">
+       <section className="py-16 md:py-32 bg-[#0a714e] text-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-10 md:mb-20"
           >
-            <h2 className="text-5xl md:text-7xl font-bold mb-6">Why Choose Us?</h2>
-            <p className="text-xl text-white/80 max-w-2xl">
+            <h2 className="text-3xl md:text-7xl font-bold mb-4 md:mb-6">Why Choose Us?</h2>
+            <p className="text-base md:text-xl text-white/80 max-w-2xl">
               "Apakasarap talaga!" – We pride ourselves on the delicious feedback from our loyal customers.
             </p>
           </motion.div>
@@ -358,13 +358,13 @@ export default function Bakery517() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 text-center"
+                className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-8 border border-white/20 text-center"
               >
-                 <div className="w-16 h-16 mx-auto bg-[#fdd304]/20 text-[#fdd304] rounded-2xl flex items-center justify-center mb-6">
-                  <item.icon size={32} />
+                 <div className="w-12 h-12 md:w-16 md:h-16 mx-auto bg-[#fdd304]/20 text-[#fdd304] rounded-2xl flex items-center justify-center mb-4 md:mb-6">
+                  <item.icon size={28} />
                 </div>
-                <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
-                <p className="text-white/80">{item.desc}</p>
+                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">{item.title}</h3>
+                <p className="text-sm md:text-base text-white/80">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -372,22 +372,22 @@ export default function Bakery517() {
       </section>
 
       {/* Customer Testimonials */}
-      <section className="py-32 bg-[#f8f7f4]">
+      <section className="py-16 md:py-32 bg-[#f8f7f4]">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-12"
+            className="space-y-8 md:space-y-12"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-slate-900">Customer Reviews</h2>
+            <h2 className="text-3xl md:text-7xl font-bold text-slate-900">Customer Reviews</h2>
 
-             <div className="border-l-4 border-[#a3342c] pl-8 py-4">
-              <p className="text-2xl md:text-3xl text-slate-700 mb-8 leading-relaxed italic">
+             <div className="border-l-4 border-[#a3342c] pl-5 md:pl-8 py-4">
+              <p className="text-xl md:text-3xl text-slate-700 mb-6 md:mb-8 leading-relaxed italic">
                 "Apakasarap talaga! Laging bukas ang bakery na 'to. libre pa ang delivery!"
               </p>
               <div>
-                <p className="text-lg font-bold text-slate-900">Maria L.</p>
+                <p className="text-base md:text-lg font-bold text-slate-900">Maria L.</p>
                 <p className="text-slate-600">Regular Customer</p>
               </div>
             </div>
@@ -396,16 +396,16 @@ export default function Bakery517() {
       </section>
 
       {/* Location Section */}
-      <section className="py-32 bg-white">
+      <section className="py-16 md:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-10 md:mb-20"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6">Visit Us</h2>
-            <p className="text-xl text-slate-600 max-w-3xl">
+            <h2 className="text-3xl md:text-7xl font-bold text-slate-900 mb-4 md:mb-6">Visit Us</h2>
+            <p className="text-base md:text-xl text-slate-600 max-w-3xl">
               We are growing! Thanks to your continuous support, we now have 26 locations to serve you.
             </p>
           </motion.div>
@@ -428,14 +428,14 @@ export default function Bakery517() {
                 className="bg-white/80 p-8 rounded-2xl"
               >
                  <MapPin className="text-[#a3342c] mb-4" size={24} />
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{branch.name}</h3>
-                <p className="text-slate-600">{branch.location}</p>
+                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">{branch.name}</h3>
+                <p className="text-sm md:text-base text-slate-600">{branch.location}</p>
               </motion.div>
             ))}
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-lg text-slate-600">
+            <p className="text-base md:text-lg text-slate-600">
               Plus 21 more locations across Abra, Pangasinan, and Mindoro!
             </p>
           </div>
@@ -443,23 +443,23 @@ export default function Bakery517() {
       </section>
 
        {/* Store Hours & Contact */}
-       <section id="contact" className="py-32 bg-[#0a714e] text-white">
+       <section id="contact" className="py-16 md:py-32 bg-[#0a714e] text-white">
         <div className="max-w-5xl mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16"
+            className="mb-10 md:mb-16"
           >
-            <h2 className="text-5xl md:text-7xl font-bold mb-8">Contact Us</h2>
-            <p className="text-3xl md:text-4xl font-light mb-6">Always Open</p>
-            <p className="text-xl text-white/90 max-w-2xl mb-2">
+            <h2 className="text-3xl md:text-7xl font-bold mb-6 md:mb-8">Contact Us</h2>
+            <p className="text-xl md:text-4xl font-light mb-4 md:mb-6">Always Open</p>
+            <p className="text-base md:text-xl text-white/90 max-w-2xl mb-2">
               Contact Number: 09397535636 (Jan Dale Zarate)
             </p>
-            <p className="text-xl text-white/90 max-w-2xl mb-2">
+            <p className="text-base md:text-xl text-white/90 max-w-2xl mb-2">
               Message us directly on our Facebook Page to order!
             </p>
-              <p className="text-xl text-white/90 max-w-2xl">
+              <p className="text-base md:text-xl text-white/90 max-w-2xl">
               Email Address: zaratejandadale15@gmail.com
 
               <br/>
@@ -479,19 +479,19 @@ export default function Bakery517() {
             transition={{ delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-             <a
-               href="https://www.facebook.com/NC517"
-               className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#a3342c] hover:bg-[#8a2b24] text-white font-semibold transition-colors duration-300 rounded-xl"
-             >
-               <MessageCircle size={24} />
-               <span className="text-lg">Message on Facebook</span>
+               <a
+                 href="https://www.facebook.com/NC517"
+                 className="inline-flex items-center justify-center gap-3 px-6 py-3 md:px-10 md:py-5 bg-[#a3342c] hover:bg-[#8a2b24] text-white font-semibold transition-colors duration-300 rounded-xl"
+               >
+                 <MessageCircle size={20} />
+                 <span className="text-base md:text-lg">Message on Facebook</span>
              </a>
-             <Link
-               to="/contact"
-               className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white hover:bg-gray-100 text-[#0a714e] font-semibold transition-colors duration-300 rounded-xl"
-             >
-               <Phone size={24} />
-               <span className="text-lg">Call Us</span>
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center gap-3 px-6 py-3 md:px-10 md:py-5 bg-white hover:bg-gray-100 text-[#0a714e] font-semibold transition-colors duration-300 rounded-xl"
+              >
+                <Phone size={20} />
+                <span className="text-base md:text-lg">Call Us</span>
              </Link>
           </motion.div>
         </div>

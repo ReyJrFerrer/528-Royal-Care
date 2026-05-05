@@ -9,3 +9,5 @@ coverage/
 bun.lock
 package-lock.json
 
+htaccess
+PHPMailer
